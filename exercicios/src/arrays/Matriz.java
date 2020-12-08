@@ -19,7 +19,7 @@ public class Matriz {
 		for (int i = 0; i < notasDaTurma.length; i++) {
 			for (int j = 0; j < notasDaTurma[i].length; j++) {
 				
-				System.out.printf("Informe a nota %d do aluno %d: ",i + 1,j + 1);
+				System.out.printf("Informe a nota %d do aluno %d: ",j + 1,i + 1);
 				notasDaTurma[i][j] = entrada.nextDouble();
 				total += notasDaTurma[i][j];
 			}

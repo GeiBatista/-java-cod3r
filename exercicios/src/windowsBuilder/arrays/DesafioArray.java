@@ -73,15 +73,16 @@ public class DesafioArray {
 			
 			
 			public void actionPerformed(ActionEvent arg0) {
-				int qtdDeNotas = Integer.parseInt(textField_Qtd.getText());				
-				int[] notas = new int[qtdDeNotas];
-							
 				
-				for (int i = 0; i < notas.length; i++) {
+				int qtdDeNotas = Integer.parseInt(textField_Qtd.getText());				
+				int[] notas = new int[qtdDeNotas];							
+				
+				//for (int i = 0; i < notas.length; i++) {
 					textField_Qtd.setText("");
-					notas[i] = Integer.parseInt(textField_Notas.getText());
+					notas[0] = Integer.parseInt(textField_Notas.getText());
+					
 					System.out.println(Arrays.toString(notas));	
-				}
+				//}
 			}
 		});
 		
@@ -122,7 +123,7 @@ public class DesafioArray {
 		textField_Media.setColumns(10);
 		
 		JLabel lblNotas = new JLabel("Notas");
-		lblNotas.setBounds(0, 58, 70, 15);
+		lblNotas.setBounds(0, 48, 70, 25);
 		frame.getContentPane().add(lblNotas);
 		
 //		textField_Qtd.setText("0");
